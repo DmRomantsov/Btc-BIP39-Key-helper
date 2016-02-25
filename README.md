@@ -1,5 +1,7 @@
 # BtcKeyHelper
 
+Helper for managing bitcoin private keys.
+
 Functions: 
 - Encode\decode private keys to BIP39 
 - WIF to private key convertation 
