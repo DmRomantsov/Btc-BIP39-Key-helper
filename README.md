@@ -1,4 +1,6 @@
-# BtcKeyHelper
+# BtcKeyHelper from Coinessa
+
+Helper library for managing bitcoin private keys.
 
 Functions: 
 - Encode\decode private keys to BIP39 
