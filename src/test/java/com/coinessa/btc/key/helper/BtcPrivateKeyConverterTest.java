@@ -9,8 +9,8 @@ import org.junit.Test;
 public class BtcPrivateKeyConverterTest {
 
     @Test
-    public void testWifToPrivateConverter() throws Exception {
-        Assert.assertEquals(BtcPrivateKeyConverter.wifToPrivateKey("5HueCGU8rMjxEXxiPuD5BDku4MkFqeZyd4dZ1jvhTVqvbTLvyTJ"),
+    public void testMainNetWifToPrivateConverter() throws Exception {
+        Assert.assertEquals(BtcPrivateKeyConverter.wifToPrivateKeyStr("5HueCGU8rMjxEXxiPuD5BDku4MkFqeZyd4dZ1jvhTVqvbTLvyTJ"),
                 "0c28fca386c7a227600b2fe50b7cae11ec86d3bf1fbe471be89827e19d72aa1d");
     }
 }

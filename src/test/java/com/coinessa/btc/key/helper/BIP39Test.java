@@ -19,10 +19,17 @@ public class BIP39Test {
     private BIP39 bip39 = new BIP39();
 
     @Test
-    public void testEncodeWif() {
+    public void testEncodeUncompressedMainNetWif() {
         String mnemonic = bip39.encodeWif("5HueCGU8rMjxEXxiPuD5BDku4MkFqeZyd4dZ1jvhTVqvbTLvyTJ", "sdfs");
         String result = bip39.decodeToHexString(mnemonic, "sdfs");
         Assert.assertEquals("0c28fca386c7a227600b2fe50b7cae11ec86d3bf1fbe471be89827e19d72aa1d", result);
+    }
+
+    @Test
+    public void testEncodeCompressedTestNetWif() {
+        String mnemonic = bip39.encodeWif("cTXshAuxrT4WjMq4fNutj5gBN4ky614qS8aFmCQWAot6kHMguhvk", "sdfs");
+        String result = bip39.decodeToHexString(mnemonic, "sdfs");
+        Assert.assertEquals("b191f5fcd0cae562ba7a5936da343e42d9040e759fdde10328e373376718e9cf", result);
     }
 
     @Test
@@ -54,6 +61,5 @@ public class BIP39Test {
             assertTrue (Arrays.equals(bip39.decode(e, "BOP"), secret));
         }
     }
-
 
 }

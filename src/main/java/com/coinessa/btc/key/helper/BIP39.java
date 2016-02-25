@@ -181,6 +181,6 @@ public class BIP39 {
 	 * @return
 	 */
 	public String encodeWif(String wif, String passphrase) {
-		return encode(ByteUtils.fromHex(BtcPrivateKeyConverter.wifToPrivateKey(wif)), passphrase);
+		return encode(BtcPrivateKeyConverter.wifToPrivateKey(wif), passphrase);
 	}
 }
