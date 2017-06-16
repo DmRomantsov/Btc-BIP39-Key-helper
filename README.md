@@ -1,4 +1,4 @@
-# BtcKeyHelper from Coinessa
+# BtcKeyHelper
 
 Helper library for managing bitcoin private keys.
 
